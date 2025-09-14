@@ -1,0 +1,25 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Final_project_team2.srcs/sources_1/imports/new/baudrate.v" \
+"../../../../Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/btn_debounce.v" \
+"../../../../Final_project_team2.srcs/sources_1/imports/new/command_to_btn.v" \
+"../../../../Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/DHT11_UCH/DHT11_UCH.srcs/sources_1/new/dht_11.v" \
+"../../../../Final_project_team2.srcs/sources_1/imports/sources_1/imports/UCH_Vivado_Work/2025_0527_fifo/2025_0527_fifo.srcs/sources_1/new/fifo.v" \
+"../../../../Final_project_team2.srcs/sources_1/new/fnd_controller_top.v" \
+"../../../../Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/realwatch_cu.v" \
+"../../../../Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/realwatch_dp.v" \
+"../../../../Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v" \
+"../../../../Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/SR04_Ultrasonic/SR04_Ultrasonic.srcs/sources_1/new/sr04_controller.v" \
+"../../../../Final_project_team2.srcs/sources_1/new/stop_uart_controller.v" \
+"../../../../Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/stopwatch_cu.v" \
+"../../../../Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/stopwatch_dp.v" \
+"../../../../Final_project_team2.srcs/sources_1/imports/new/uart_controller.v" \
+"../../../../Final_project_team2.srcs/sources_1/imports/new/uart_rx.v" \
+"../../../../Final_project_team2.srcs/sources_1/imports/new/uart_tx.v" \
+"../../../../Final_project_team2.srcs/sources_1/new/Top_final_module.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

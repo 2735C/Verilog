@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May 30 18:08:48 2025
+# Process ID: 11044
+# Current directory: C:/Working/FPGA_AI_25_2/Final_project_team2_333
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20516 C:\Working\FPGA_AI_25_2\Final_project_team2_333\Final_project_team2.xpr
+# Log file: C:/Working/FPGA_AI_25_2/Final_project_team2_333/vivado.log
+# Journal file: C:/Working/FPGA_AI_25_2/Final_project_team2_333\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Working/FPGA_AI_25_2/Final_project_team2_333/Final_project_team2.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+refresh_design

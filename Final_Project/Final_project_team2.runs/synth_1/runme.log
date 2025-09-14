@@ -1,0 +1,620 @@
+
+*** Running vivado
+    with args -log Top_final_module.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_final_module.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source Top_final_module.tcl -notrace
+Command: synth_design -top Top_final_module -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8760
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1106.793 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_final_module' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/Top_final_module.v:3]
+INFO: [Synth 8-6157] synthesizing module 'btn_debounce' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/btn_debounce.v:3]
+	Parameter F_COUNT bound to: 10000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'btn_debounce' (1#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/btn_debounce.v:3]
+INFO: [Synth 8-6157] synthesizing module 'stop_uart_controller' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/stop_uart_controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'baudrate' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/new/baudrate.v:3]
+	Parameter BAUD bound to: 9600 - type: integer 
+	Parameter BAUD_COUNT bound to: 1302 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'baudrate' (2#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/new/baudrate.v:3]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/new/uart_rx.v:3]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter START bound to: 1 - type: integer 
+	Parameter DATA bound to: 2 - type: integer 
+	Parameter DATA_READ bound to: 3 - type: integer 
+	Parameter STOP bound to: 4 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/new/uart_rx.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (3#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/new/uart_rx.v:3]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/new/uart_tx.v:3]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter START bound to: 1 - type: integer 
+	Parameter DATA bound to: 2 - type: integer 
+	Parameter STOP bound to: 3 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/new/uart_tx.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (4#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/new/uart_tx.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'stop_uart_controller' (5#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/stop_uart_controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'command_to_btn' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/new/command_to_btn.v:233]
+	Parameter IDLE bound to: 4'b0000 
+	Parameter PROCESS bound to: 4'b0001 
+	Parameter CLEAR_STATE bound to: 4'b0010 
+	Parameter RUN_STATE bound to: 4'b0011 
+	Parameter STOP_STATE bound to: 4'b0100 
+	Parameter WATCH_MODE_STATE bound to: 4'b0101 
+	Parameter MODE_STATE bound to: 4'b0110 
+	Parameter RESET_STATE bound to: 4'b0111 
+	Parameter R_STATE bound to: 4'b1000 
+	Parameter U_STATE bound to: 4'b1001 
+	Parameter D_STATE bound to: 4'b1010 
+	Parameter L_STATE bound to: 4'b1011 
+INFO: [Synth 8-6155] done synthesizing module 'command_to_btn' (6#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/new/command_to_btn.v:233]
+INFO: [Synth 8-6157] synthesizing module 'stopwatch_cu' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/stopwatch_cu.v:3]
+	Parameter STOP bound to: 2'b00 
+	Parameter RUN bound to: 2'b01 
+	Parameter CLEAR bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'stopwatch_cu' (7#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/stopwatch_cu.v:3]
+INFO: [Synth 8-6157] synthesizing module 'stopwatch_dp' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/stopwatch_dp.v:6]
+INFO: [Synth 8-6157] synthesizing module 'tick_gen_100hz' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/stopwatch_dp.v:138]
+	Parameter FCOUNT bound to: 1000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'tick_gen_100hz' (8#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/stopwatch_dp.v:138]
+INFO: [Synth 8-6157] synthesizing module 'time_counter' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/stopwatch_dp.v:83]
+	Parameter BIT_WIDTH bound to: 7 - type: integer 
+	Parameter TICK_COUNT bound to: 100 - type: integer 
+	Parameter TIME_START bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'time_counter' (9#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/stopwatch_dp.v:83]
+INFO: [Synth 8-6157] synthesizing module 'time_counter__parameterized0' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/stopwatch_dp.v:83]
+	Parameter BIT_WIDTH bound to: 6 - type: integer 
+	Parameter TICK_COUNT bound to: 60 - type: integer 
+	Parameter TIME_START bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'time_counter__parameterized0' (9#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/stopwatch_dp.v:83]
+INFO: [Synth 8-6157] synthesizing module 'time_counter__parameterized1' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/stopwatch_dp.v:83]
+	Parameter BIT_WIDTH bound to: 5 - type: integer 
+	Parameter TICK_COUNT bound to: 24 - type: integer 
+	Parameter TIME_START bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'time_counter__parameterized1' (9#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/stopwatch_dp.v:83]
+INFO: [Synth 8-6155] done synthesizing module 'stopwatch_dp' (10#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/stopwatch_dp.v:6]
+INFO: [Synth 8-6157] synthesizing module 'realwatch_cu' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/realwatch_cu.v:3]
+	Parameter IDLE bound to: 3'b000 
+	Parameter UP bound to: 3'b001 
+	Parameter DOWN bound to: 3'b010 
+	Parameter MOVE_LEFT bound to: 3'b011 
+	Parameter MOVE_RIGHT bound to: 3'b100 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/realwatch_cu.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'realwatch_cu' (11#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/realwatch_cu.v:3]
+INFO: [Synth 8-6157] synthesizing module 'realwatch_dp' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/realwatch_dp.v:3]
+INFO: [Synth 8-6157] synthesizing module 'tick_gen_100hz_watch' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/realwatch_dp.v:175]
+	Parameter FCOUNT bound to: 1000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'tick_gen_100hz_watch' (12#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/realwatch_dp.v:175]
+INFO: [Synth 8-6157] synthesizing module 'real_time_counter' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/realwatch_dp.v:119]
+	Parameter BIT_WIDTH bound to: 7 - type: integer 
+	Parameter TICK_COUNT bound to: 100 - type: integer 
+	Parameter TIME_START bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'real_time_counter' (13#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/realwatch_dp.v:119]
+INFO: [Synth 8-6157] synthesizing module 'real_time_counter__parameterized0' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/realwatch_dp.v:119]
+	Parameter BIT_WIDTH bound to: 6 - type: integer 
+	Parameter TICK_COUNT bound to: 60 - type: integer 
+	Parameter TIME_START bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'real_time_counter__parameterized0' (13#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/realwatch_dp.v:119]
+INFO: [Synth 8-6157] synthesizing module 'real_time_counter__parameterized1' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/realwatch_dp.v:119]
+	Parameter BIT_WIDTH bound to: 5 - type: integer 
+	Parameter TICK_COUNT bound to: 24 - type: integer 
+	Parameter TIME_START bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'real_time_counter__parameterized1' (13#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/realwatch_dp.v:119]
+INFO: [Synth 8-6155] done synthesizing module 'realwatch_dp' (14#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/UART_STOPWATCH/UART_STOPWATCH.srcs/sources_1/imports/UCH_Vivado_Work/0515_stopwatch/0515_stopwatch.srcs/sources_1/new/realwatch_dp.v:3]
+INFO: [Synth 8-6157] synthesizing module 'sender_uart' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v:2]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter PREPARE bound to: 1 - type: integer 
+	Parameter LOAD bound to: 2 - type: integer 
+	Parameter WAIT bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_controller' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/new/uart_controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fifo' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/imports/UCH_Vivado_Work/2025_0527_fifo/2025_0527_fifo.srcs/sources_1/new/fifo.v:5]
+INFO: [Synth 8-6157] synthesizing module 'fifo_CU' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/imports/UCH_Vivado_Work/2025_0527_fifo/2025_0527_fifo.srcs/sources_1/new/fifo.v:78]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/imports/UCH_Vivado_Work/2025_0527_fifo/2025_0527_fifo.srcs/sources_1/new/fifo.v:119]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_CU' (15#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/imports/UCH_Vivado_Work/2025_0527_fifo/2025_0527_fifo.srcs/sources_1/new/fifo.v:78]
+INFO: [Synth 8-6157] synthesizing module 'register_file' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/imports/UCH_Vivado_Work/2025_0527_fifo/2025_0527_fifo.srcs/sources_1/new/fifo.v:49]
+	Parameter DEPTH bound to: 16 - type: integer 
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register_file' (16#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/imports/UCH_Vivado_Work/2025_0527_fifo/2025_0527_fifo.srcs/sources_1/new/fifo.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'fifo' (17#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/imports/UCH_Vivado_Work/2025_0527_fifo/2025_0527_fifo.srcs/sources_1/new/fifo.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'uart_controller' (18#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/new/uart_controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'datatoascii' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v:173]
+INFO: [Synth 8-6155] done synthesizing module 'datatoascii' (19#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v:173]
+INFO: [Synth 8-6157] synthesizing module 'datatoascii2' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v:183]
+INFO: [Synth 8-6155] done synthesizing module 'datatoascii2' (20#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v:183]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v:91]
+INFO: [Synth 8-6155] done synthesizing module 'sender_uart' (21#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v:2]
+INFO: [Synth 8-6157] synthesizing module 'sr04_controller' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/SR04_Ultrasonic/SR04_Ultrasonic.srcs/sources_1/new/sr04_controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'start_trigger' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/SR04_Ultrasonic/SR04_Ultrasonic.srcs/sources_1/new/sr04_controller.v:132]
+INFO: [Synth 8-6155] done synthesizing module 'start_trigger' (22#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/SR04_Ultrasonic/SR04_Ultrasonic.srcs/sources_1/new/sr04_controller.v:132]
+INFO: [Synth 8-6157] synthesizing module 'tick_gen_sr04' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/SR04_Ultrasonic/SR04_Ultrasonic.srcs/sources_1/new/sr04_controller.v:167]
+	Parameter F_COUNT bound to: 100 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'tick_gen_sr04' (23#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/SR04_Ultrasonic/SR04_Ultrasonic.srcs/sources_1/new/sr04_controller.v:167]
+INFO: [Synth 8-6157] synthesizing module 'distance_calculator' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/SR04_Ultrasonic/SR04_Ultrasonic.srcs/sources_1/new/sr04_controller.v:47]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter MEASURE bound to: 1 - type: integer 
+	Parameter DIVIDE bound to: 2 - type: integer 
+	Parameter DONE bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'distance_calculator' (24#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/SR04_Ultrasonic/SR04_Ultrasonic.srcs/sources_1/new/sr04_controller.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'sr04_controller' (25#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/SR04_Ultrasonic/SR04_Ultrasonic.srcs/sources_1/new/sr04_controller.v:3]
+WARNING: [Synth 8-689] width (10) of port connection 'dist' does not match port width (16) of module 'sr04_controller' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/Top_final_module.v:151]
+INFO: [Synth 8-6157] synthesizing module 'dht11_controller' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/DHT11_UCH/DHT11_UCH.srcs/sources_1/new/dht_11.v:3]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter START bound to: 1 - type: integer 
+	Parameter WAIT bound to: 2 - type: integer 
+	Parameter SYNCL bound to: 3 - type: integer 
+	Parameter SYNCH bound to: 4 - type: integer 
+	Parameter DATA_SYNC bound to: 5 - type: integer 
+	Parameter DATA_DETECT bound to: 6 - type: integer 
+	Parameter STOP bound to: 7 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'tick_gen_10us' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/DHT11_UCH/DHT11_UCH.srcs/sources_1/new/dht_11.v:172]
+	Parameter DIV bound to: 1000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'tick_gen_10us' (26#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/DHT11_UCH/DHT11_UCH.srcs/sources_1/new/dht_11.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'dht11_controller' (27#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/UCH_Vivado_Work/DHT11_UCH/DHT11_UCH.srcs/sources_1/new/dht_11.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fnd_controller_top' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/fnd_controller_top.v:4]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/fnd_controller_top.v:180]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (28#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/fnd_controller_top.v:180]
+INFO: [Synth 8-6157] synthesizing module 'Comparator' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/fnd_controller_top.v:286]
+	Parameter BIT_WIDTH_MSEC bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Comparator' (29#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/fnd_controller_top.v:286]
+INFO: [Synth 8-6157] synthesizing module 'counter_8' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/fnd_controller_top.v:212]
+INFO: [Synth 8-6155] done synthesizing module 'counter_8' (30#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/fnd_controller_top.v:212]
+INFO: [Synth 8-6157] synthesizing module 'decoder_2x4' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/fnd_controller_top.v:235]
+INFO: [Synth 8-226] default block is never used [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/fnd_controller_top.v:240]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_2x4' (31#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/fnd_controller_top.v:235]
+INFO: [Synth 8-6157] synthesizing module 'mux_2x1_watch_stopwatch' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/fnd_controller_top.v:408]
+INFO: [Synth 8-226] default block is never used [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/fnd_controller_top.v:424]
+INFO: [Synth 8-6155] done synthesizing module 'mux_2x1_watch_stopwatch' (32#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/fnd_controller_top.v:408]
+INFO: [Synth 8-6157] synthesizing module 'digit_spliter' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/fnd_controller_top.v:356]
+	Parameter BIT_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'digit_spliter' (33#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/fnd_controller_top.v:356]
+INFO: [Synth 8-6157] synthesizing module 'digit_spliter__parameterized0' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/fnd_controller_top.v:356]
+	Parameter BIT_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'digit_spliter__parameterized0' (33#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/fnd_controller_top.v:356]
+INFO: [Synth 8-6157] synthesizing module 'digit_spliter__parameterized1' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/fnd_controller_top.v:356]
+	Parameter BIT_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'digit_spliter__parameterized1' (33#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/fnd_controller_top.v:356]
+INFO: [Synth 8-6157] synthesizing module 'digit_spliter_sr04' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/fnd_controller_top.v:329]
+	Parameter BIT_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'digit_spliter_sr04' (34#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/fnd_controller_top.v:329]
+INFO: [Synth 8-6157] synthesizing module 'digit_spliter__parameterized2' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/fnd_controller_top.v:356]
+	Parameter BIT_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'digit_spliter__parameterized2' (34#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/fnd_controller_top.v:356]
+INFO: [Synth 8-6157] synthesizing module 'bcd' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/fnd_controller_top.v:378]
+INFO: [Synth 8-6155] done synthesizing module 'bcd' (35#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/fnd_controller_top.v:378]
+INFO: [Synth 8-6155] done synthesizing module 'fnd_controller_top' (36#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/fnd_controller_top.v:4]
+INFO: [Synth 8-6157] synthesizing module 'LED' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/Top_final_module.v:165]
+INFO: [Synth 8-226] default block is never used [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/Top_final_module.v:170]
+INFO: [Synth 8-6155] done synthesizing module 'LED' (37#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/Top_final_module.v:165]
+INFO: [Synth 8-6155] done synthesizing module 'Top_final_module' (38#1) [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/new/Top_final_module.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1106.793 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1106.793 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1106.793 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1106.793 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/constrs_1/imports/UCH_Vivado_Work/Basys-3-Master.xdc]
+Finished Parsing XDC File [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/constrs_1/imports/UCH_Vivado_Work/Basys-3-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/constrs_1/imports/UCH_Vivado_Work/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_final_module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_final_module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1200.203 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1200.203 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1200.203 ; gain = 93.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1200.203 ; gain = 93.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1200.203 ; gain = 93.410
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'uart_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'command_to_btn'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'stopwatch_cu'
+INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'realwatch_cu'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sender_uart'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'distance_calculator'
+INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'dht11_controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                            00001 |                              000
+                   START |                            00010 |                              001
+               DATA_READ |                            00100 |                              011
+                    DATA |                            01000 |                              010
+                    STOP |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                              000
+                   START |                               01 |                              001
+                    DATA |                               10 |                              010
+                    STOP |                               11 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'sequential' in module 'uart_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0000 |                             0000
+                 PROCESS |                             0001 |                             0001
+                  iSTATE |                             0010 |                             0011
+                 iSTATE1 |                             0011 |                             0010
+                 iSTATE0 |                             0100 |                             0100
+                 iSTATE8 |                             0101 |                             0101
+                 iSTATE6 |                             0110 |                             0110
+                 iSTATE4 |                             0111 |                             0111
+                 iSTATE7 |                             1000 |                             1000
+                 iSTATE5 |                             1001 |                             1001
+                 iSTATE3 |                             1010 |                             1010
+                 iSTATE2 |                             1011 |                             1011
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'sequential' in module 'command_to_btn'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    STOP |                              001 |                               00
+                     RUN |                              010 |                               01
+                   CLEAR |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'stopwatch_cu'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                            00001 |                              000
+                      UP |                            00010 |                              001
+                    DOWN |                            00100 |                              010
+               MOVE_LEFT |                            01000 |                              011
+              MOVE_RIGHT |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'one-hot' in module 'realwatch_cu'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                            00000
+                 PREPARE |                               01 |                            00001
+                    LOAD |                               10 |                            00010
+                    WAIT |                               11 |                            00011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'sender_uart'
+WARNING: [Synth 8-327] inferring latch for variable 'msg_len_reg_reg' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v:124]
+WARNING: [Synth 8-327] inferring latch for variable 'message_buffer_reg[0]' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v:101]
+WARNING: [Synth 8-327] inferring latch for variable 'message_buffer_reg[1]' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v:101]
+WARNING: [Synth 8-327] inferring latch for variable 'message_buffer_reg[2]' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v:101]
+WARNING: [Synth 8-327] inferring latch for variable 'message_buffer_reg[3]' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v:101]
+WARNING: [Synth 8-327] inferring latch for variable 'message_buffer_reg[4]' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v:101]
+WARNING: [Synth 8-327] inferring latch for variable 'message_buffer_reg[5]' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v:101]
+WARNING: [Synth 8-327] inferring latch for variable 'message_buffer_reg[6]' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v:101]
+WARNING: [Synth 8-327] inferring latch for variable 'message_buffer_reg[7]' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v:101]
+WARNING: [Synth 8-327] inferring latch for variable 'message_buffer_reg[8]' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v:101]
+WARNING: [Synth 8-327] inferring latch for variable 'message_buffer_reg[9]' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v:101]
+WARNING: [Synth 8-327] inferring latch for variable 'message_buffer_reg[10]' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v:101]
+WARNING: [Synth 8-327] inferring latch for variable 'message_buffer_reg[11]' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v:101]
+WARNING: [Synth 8-327] inferring latch for variable 'message_buffer_reg[12]' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v:101]
+WARNING: [Synth 8-327] inferring latch for variable 'message_buffer_reg[13]' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v:101]
+WARNING: [Synth 8-327] inferring latch for variable 'message_buffer_reg[14]' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v:101]
+WARNING: [Synth 8-327] inferring latch for variable 'message_buffer_reg[15]' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v:101]
+WARNING: [Synth 8-327] inferring latch for variable 'message_buffer_reg[16]' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v:101]
+WARNING: [Synth 8-327] inferring latch for variable 'message_buffer_reg[17]' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v:101]
+WARNING: [Synth 8-327] inferring latch for variable 'message_buffer_reg[18]' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v:101]
+WARNING: [Synth 8-327] inferring latch for variable 'message_buffer_reg[19]' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v:101]
+WARNING: [Synth 8-327] inferring latch for variable 'message_buffer_reg[20]' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v:101]
+WARNING: [Synth 8-327] inferring latch for variable 'message_buffer_reg[21]' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v:101]
+WARNING: [Synth 8-327] inferring latch for variable 'message_buffer_reg[22]' [D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.srcs/sources_1/imports/sources_1/new/sender_uart.v:101]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                 MEASURE |                               01 |                               01
+                  DIVIDE |                               10 |                               10
+                    DONE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'distance_calculator'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                   START |                              001 |                              001
+                    WAIT |                              010 |                              010
+                   SYNCL |                              011 |                              011
+                   SYNCH |                              100 |                              100
+               DATA_SYNC |                              101 |                              101
+             DATA_DETECT |                              110 |                              110
+                    STOP |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'sequential' in module 'dht11_controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1200.203 ; gain = 93.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   21 Bit       Adders := 2     
+	   2 Input   20 Bit       Adders := 2     
+	   2 Input   17 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   14 Bit       Adders := 5     
+	   2 Input   11 Bit       Adders := 3     
+	   2 Input   10 Bit       Adders := 1     
+	   4 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 6     
+	   2 Input    6 Bit       Adders := 8     
+	   2 Input    5 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 15    
+	   2 Input    3 Bit       Adders := 3     
+	   2 Input    2 Bit       Adders := 2     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               21 Bit    Registers := 2     
+	               20 Bit    Registers := 2     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               14 Bit    Registers := 5     
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 12    
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 5     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 34    
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 69    
++---Muxes : 
+	   2 Input   40 Bit        Muxes := 1     
+	   4 Input   21 Bit        Muxes := 2     
+	   2 Input   20 Bit        Muxes := 2     
+	   2 Input   17 Bit        Muxes := 1     
+	   4 Input   16 Bit        Muxes := 1     
+	   3 Input   16 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 5     
+	   2 Input   11 Bit        Muxes := 5     
+	   8 Input   11 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 6     
+	   2 Input    7 Bit        Muxes := 11    
+	   2 Input    6 Bit        Muxes := 16    
+	   5 Input    5 Bit        Muxes := 3     
+	   2 Input    5 Bit        Muxes := 12    
+	   2 Input    4 Bit        Muxes := 16    
+	   5 Input    4 Bit        Muxes := 4     
+	   4 Input    4 Bit        Muxes := 9     
+	  11 Input    4 Bit        Muxes := 2     
+	   3 Input    4 Bit        Muxes := 2     
+	   4 Input    3 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 5     
+	   8 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 13    
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 59    
+	   5 Input    1 Bit        Muxes := 9     
+	   3 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 41    
+	   8 Input    1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1223.211 ; gain = 116.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+-----------------------------------------------+-----------+----------------------+-------------+
+|Module Name | RTL Object                                    | Inference | Size (Depth x Width) | Primitives  | 
++------------+-----------------------------------------------+-----------+----------------------+-------------+
+|U_SEND      | U_UART_CNTL/U_FIFO_TX/U_register_file/mem_reg | Implied   | 16 x 8               | RAM32M x 2	 | 
++------------+-----------------------------------------------+-----------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1223.211 ; gain = 116.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1223.211 ; gain = 116.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------+-----------------------------------------------+-----------+----------------------+-------------+
+|Module Name | RTL Object                                    | Inference | Size (Depth x Width) | Primitives  | 
++------------+-----------------------------------------------+-----------+----------------------+-------------+
+|U_SEND      | U_UART_CNTL/U_FIFO_TX/U_register_file/mem_reg | Implied   | 16 x 8               | RAM32M x 2	 | 
++------------+-----------------------------------------------+-----------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1266.863 ; gain = 160.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1280.695 ; gain = 173.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1280.695 ; gain = 173.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1280.695 ; gain = 173.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1280.695 ; gain = 173.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1280.695 ; gain = 173.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1280.695 ; gain = 173.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-----------------+------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name      | RTL Name               | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-----------------+------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Top_final_module | U_DHT/data_reg_reg[32] | 9      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Top_final_module | U_DHT/data_reg_reg[16] | 17     | 1     | YES          | NO                 | YES               | 1      | 0       | 
++-----------------+------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    84|
+|3     |LUT1   |    56|
+|4     |LUT2   |   286|
+|5     |LUT3   |   164|
+|6     |LUT4   |   142|
+|7     |LUT5   |   160|
+|8     |LUT6   |   347|
+|9     |MUXF7  |    15|
+|10    |RAM32M |     2|
+|11    |SRL16E |     2|
+|12    |FDCE   |   586|
+|13    |FDPE   |    18|
+|14    |FDRE   |     9|
+|15    |LD     |    39|
+|16    |IBUF   |    13|
+|17    |IOBUF  |     1|
+|18    |OBUF   |    21|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1280.695 ; gain = 173.902
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 24 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1280.695 ; gain = 80.492
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1280.695 ; gain = 173.902
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1292.809 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 141 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1292.809 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 42 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+  LD => LDCE: 39 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+129 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1292.809 ; gain = 186.016
+INFO: [Common 17-1381] The checkpoint 'D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.runs/synth_1/Top_final_module.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_final_module_utilization_synth.rpt -pb Top_final_module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  2 11:44:45 2025...

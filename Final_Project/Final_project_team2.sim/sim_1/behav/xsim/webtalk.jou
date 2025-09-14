@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jun  2 09:00:20 2025
+# Process ID: 9636
+# Current directory: D:/UCH_Vivado_Work/Final_project_team2_plus_demux/Final_project_team2.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/UCH_Vivado_Work/Final_project_team2_plus_demux/Final_project_team2.sim/sim_1/behav/xsim/xsim.dir/tb_final_module_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/UCH_Vivado_Work/Final_project_team2_plus_demux/Final_project_team2.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/UCH_Vivado_Work/Final_project_team2_plus_demux/Final_project_team2.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/UCH_Vivado_Work/Final_project_team2_plus_demux/Final_project_team2.sim/sim_1/behav/xsim/xsim.dir/tb_final_module_behav/webtalk/xsim_webtalk.tcl -notrace

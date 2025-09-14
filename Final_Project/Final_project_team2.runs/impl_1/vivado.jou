@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jun  2 11:44:51 2025
+# Process ID: 9352
+# Current directory: D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.runs/impl_1
+# Command line: vivado.exe -log Top_final_module.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Top_final_module.tcl -notrace
+# Log file: D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.runs/impl_1/Top_final_module.vdi
+# Journal file: D:/UCH_Vivado_Work/Final_project_team2_test/Final_project_team2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Top_final_module.tcl -notrace

@@ -1,0 +1,570 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Jun  2 11:45:28 2025
+| Host         : DESKTOP-7CFQ9ND running 64-bit major release  (build 9200)
+| Command      : report_methodology -file Top_final_module_methodology_drc_routed.rpt -pb Top_final_module_methodology_drc_routed.pb -rpx Top_final_module_methodology_drc_routed.rpx
+| Design       : Top_final_module
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 103
++-----------+------------------+-------------------------------+------------+
+| Rule      | Severity         | Description                   | Violations |
++-----------+------------------+-------------------------------+------------+
+| TIMING-14 | Critical Warning | LUT on the clock tree         | 1          |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell   | 35         |
+| LUTAR-1   | Warning          | LUT drives async reset alert  | 2          |
+| TIMING-18 | Warning          | Missing input or output delay | 26         |
+| TIMING-20 | Warning          | Non-clocked latch             | 39         |
++-----------+------------------+-------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-14#1 Critical Warning
+LUT on the clock tree  
+The LUT U_CU/r_counter[19]_i_2 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_FND/U_Counter_8/r_counter_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_FND/U_Counter_8/r_counter_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_FND/U_Counter_8/r_counter_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_D/q_reg_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_D/q_reg_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_D/q_reg_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_D/q_reg_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_D/q_reg_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_D/q_reg_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_D/q_reg_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_D/q_reg_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_L/q_reg_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#13 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_L/q_reg_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#14 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_L/q_reg_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#15 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_L/q_reg_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#16 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_L/q_reg_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#17 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_L/q_reg_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#18 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_L/q_reg_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#19 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_L/q_reg_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#20 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_R/q_reg_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#21 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_R/q_reg_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#22 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_R/q_reg_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#23 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_R/q_reg_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#24 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_R/q_reg_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#25 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_R/q_reg_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#26 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_R/q_reg_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#27 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_R/q_reg_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#28 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_U/q_reg_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#29 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_U/q_reg_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#30 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_U/q_reg_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#31 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_U/q_reg_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#32 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_U/q_reg_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#33 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_U/q_reg_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#34 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_U/q_reg_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#35 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_btn_U/q_reg_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell U_CMD/FSM_onehot_state[2]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) U_CU/FSM_onehot_state_reg[0]/PRE, U_CU/FSM_onehot_state_reg[1]/CLR,
+U_CU/FSM_onehot_state_reg[2]/CLR, U_CU/o_runstop_reg/CLR,
+U_RCU/FSM_onehot_c_state_reg[0]/PRE, U_RCU/FSM_onehot_c_state_reg[1]/CLR,
+U_RCU/FSM_onehot_c_state_reg[2]/CLR, U_RCU/FSM_onehot_c_state_reg[3]/CLR,
+U_RCU/FSM_onehot_c_state_reg[4]/CLR,
+U_RDP/U_HOUR_REAL/count_reg_reg[0]/CLR,
+U_RDP/U_HOUR_REAL/count_reg_reg[1]/CLR,
+U_RDP/U_HOUR_REAL/count_reg_reg[2]/PRE,
+U_RDP/U_HOUR_REAL/count_reg_reg[4]/CLR, U_RDP/sel_pos_reg[0]/CLR,
+U_RDP/sel_pos_reg[1]/CLR (the first 15 of 59 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell U_CMD/r_counter[19]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) U_DP/U_HOUR/count_reg_reg[0]/CLR, U_DP/U_HOUR/count_reg_reg[1]/CLR,
+U_DP/U_HOUR/count_reg_reg[2]/PRE, U_DP/U_HOUR/count_reg_reg[3]/PRE,
+U_DP/U_HOUR/count_reg_reg[4]/CLR, U_DP/U_MIN/count_reg_reg[0]/CLR,
+U_DP/U_MIN/count_reg_reg[1]/CLR, U_DP/U_MIN/count_reg_reg[2]/CLR,
+U_DP/U_MIN/count_reg_reg[3]/CLR, U_DP/U_MIN/count_reg_reg[4]/CLR,
+U_DP/U_MIN/count_reg_reg[5]/CLR, U_DP/U_MIN/o_tick_reg_reg/CLR,
+U_DP/U_MSEC/count_reg_reg[0]/CLR, U_DP/U_MSEC/count_reg_reg[1]/CLR,
+U_DP/U_MSEC/count_reg_reg[2]/CLR (the first 15 of 48 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on dht11_data relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on echo relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on rst relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on rx relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on sw[0] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on sw[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on sw[2] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on sw[3] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on uart_sw relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on fnd_data[0] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on fnd_data[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on fnd_data[2] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on fnd_data[3] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on fnd_data[4] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on fnd_data[5] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on fnd_data[6] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on fnd_data[7] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on led_out[0] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on led_out[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on led_out[2] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An output delay is missing on led_out[3] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An output delay is missing on state_led[0] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An output delay is missing on state_led[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#24 Warning
+Missing input or output delay  
+An output delay is missing on state_led[2] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#25 Warning
+Missing input or output delay  
+An output delay is missing on trig relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#26 Warning
+Missing input or output delay  
+An output delay is missing on tx relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[10][0] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[10][0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[10][1] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[10][1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[10][2] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[10][2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[10][3] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[10][3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[11][0] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[11][0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[11][1] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[11][1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[11][2] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[11][2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[11][3] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[11][3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[12][0] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[12][0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[12][1] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[12][1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[12][2] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[12][2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[12][3] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[12][3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[19][0] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[19][0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[19][1] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[19][1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[19][2] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[19][2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[19][3] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[19][3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[19][5] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[19][5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[19][6] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[19][6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[20][0] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[20][0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[20][1] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[20][1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[20][2] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[20][2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[20][3] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[20][3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[2][1] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[2][1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[6][0] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[6][0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[6][1] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[6][1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[6][2] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[6][2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[6][3] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[6][3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[6][4] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[6][4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[6][5] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[6][5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[6][6] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[6][6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[7][0] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[7][0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[7][1] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[7][1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[7][2] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[7][2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#34 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[7][3] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[7][3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#35 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[9][0] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[9][0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#36 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[9][1] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[9][1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#37 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[9][2] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[9][2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#38 Warning
+Non-clocked latch  
+The latch U_SEND/message_buffer_reg[9][3] cannot be properly analyzed as its control pin U_SEND/message_buffer_reg[9][3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#39 Warning
+Non-clocked latch  
+The latch U_SEND/msg_len_reg_reg[2] cannot be properly analyzed as its control pin U_SEND/msg_len_reg_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+
