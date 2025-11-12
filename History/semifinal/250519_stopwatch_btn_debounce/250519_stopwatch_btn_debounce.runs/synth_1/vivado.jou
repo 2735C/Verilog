@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon May 19 12:58:34 2025
+# Process ID: 17892
+# Current directory: C:/Working/FPGA_AI_25_2/250519_stopwatch_btn_debounce/250519_stopwatch_btn_debounce.runs/synth_1
+# Command line: vivado.exe -log stopwatch_re.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source stopwatch_re.tcl
+# Log file: C:/Working/FPGA_AI_25_2/250519_stopwatch_btn_debounce/250519_stopwatch_btn_debounce.runs/synth_1/stopwatch_re.vds
+# Journal file: C:/Working/FPGA_AI_25_2/250519_stopwatch_btn_debounce/250519_stopwatch_btn_debounce.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source stopwatch_re.tcl -notrace

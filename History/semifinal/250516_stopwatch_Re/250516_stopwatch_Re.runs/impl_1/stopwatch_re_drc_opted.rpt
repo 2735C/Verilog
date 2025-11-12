@@ -1,0 +1,56 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon May 19 15:04:52 2025
+| Host         : DESKTOP-7CFQ9ND running 64-bit major release  (build 9200)
+| Command      : report_drc -file stopwatch_re_drc_opted.rpt -pb stopwatch_re_drc_opted.pb -rpx stopwatch_re_drc_opted.rpx
+| Design       : stopwatch_re
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 1
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT U_Stopwatch_CU/r_counter[19]_i_2 is driving clock pin of 21 cells. This could lead to large hold time violations. Involved cells are:
+U_Stopwatch_DP/U_Tick_100hz/o_tick_100_reg,
+U_Stopwatch_DP/U_Tick_100hz/r_counter_reg[0],
+U_Stopwatch_DP/U_Tick_100hz/r_counter_reg[10],
+U_Stopwatch_DP/U_Tick_100hz/r_counter_reg[11],
+U_Stopwatch_DP/U_Tick_100hz/r_counter_reg[12],
+U_Stopwatch_DP/U_Tick_100hz/r_counter_reg[13],
+U_Stopwatch_DP/U_Tick_100hz/r_counter_reg[14],
+U_Stopwatch_DP/U_Tick_100hz/r_counter_reg[15],
+U_Stopwatch_DP/U_Tick_100hz/r_counter_reg[16],
+U_Stopwatch_DP/U_Tick_100hz/r_counter_reg[17],
+U_Stopwatch_DP/U_Tick_100hz/r_counter_reg[18],
+U_Stopwatch_DP/U_Tick_100hz/r_counter_reg[19],
+U_Stopwatch_DP/U_Tick_100hz/r_counter_reg[1],
+U_Stopwatch_DP/U_Tick_100hz/r_counter_reg[2],
+U_Stopwatch_DP/U_Tick_100hz/r_counter_reg[3] (the first 15 of 21 listed)
+Related violations: <none>
+
+

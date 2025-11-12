@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../250516_stopwatch.srcs/sources_1/new/stopwatch.v" \
+"../../../../250516_stopwatch.srcs/sources_1/imports/new/fnd_controller.v" \
+"../../../../250516_stopwatch.srcs/sources_1/new/stopwatch_dp.v" \
+"../../../../250516_stopwatch.srcs/sources_1/new/stopwatch_cu.v" \
+"../../../../250516_stopwatch.srcs/sim_1/new/tb_stopwatch.v" \
+"../../../../250516_stopwatch.srcs/sim_1/imports/new/stopwatch_dp.v" \
+"../../../../250516_stopwatch.srcs/sim_1/new/tb_stopwatch0516.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May 16 17:18:09 2025
+# Process ID: 6092
+# Current directory: C:/Working/FPGA_AI_25_2/250515_stopwatch/250515_stopwatch.runs/impl_1
+# Command line: vivado.exe -log stopwatch.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source stopwatch.tcl -notrace
+# Log file: C:/Working/FPGA_AI_25_2/250515_stopwatch/250515_stopwatch.runs/impl_1/stopwatch.vdi
+# Journal file: C:/Working/FPGA_AI_25_2/250515_stopwatch/250515_stopwatch.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source stopwatch.tcl -notrace

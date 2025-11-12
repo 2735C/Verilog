@@ -1,0 +1,10 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Working/FPGA_AI_25_2/250516_stopwatch_Re/250516_stopwatch_Re.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+C:/Working/FPGA_AI_25_2/250516_stopwatch_Re/250516_stopwatch_Re.srcs/sim_1/new/tb_stopwatch_re.v,1747612714,verilog,,,,tb_stopwatch_re,,,,,,,,
+C:/Working/FPGA_AI_25_2/250516_stopwatch_Re/250516_stopwatch_Re.srcs/sources_1/new/stopwatch_cu_re.v,1747393261,verilog,,C:/Working/FPGA_AI_25_2/250516_stopwatch_Re/250516_stopwatch_Re.srcs/sources_1/new/stopwatch_dp_re.v,,stopwatch_cu,,,,,,,,
+C:/Working/FPGA_AI_25_2/250516_stopwatch_Re/250516_stopwatch_Re.srcs/sources_1/new/stopwatch_dp_re.v,1747393252,verilog,,C:/Working/FPGA_AI_25_2/250516_stopwatch_Re/250516_stopwatch_Re.srcs/sources_1/new/stopwatch_fnd_ctl_re.v,,stopwatch_dp;tick_gen_100hz;time_counter,,,,,,,,
+C:/Working/FPGA_AI_25_2/250516_stopwatch_Re/250516_stopwatch_Re.srcs/sources_1/new/stopwatch_fnd_ctl_re.v,1747393279,verilog,,C:/Working/FPGA_AI_25_2/250516_stopwatch_Re/250516_stopwatch_Re.srcs/sources_1/new/stopwatch_re.v,,bcd;clk_div;counter_4;decoder_2x4;digit_splitter;fnd_controllr;mux_2x1;mux_4x1,,,,,,,,
+C:/Working/FPGA_AI_25_2/250516_stopwatch_Re/250516_stopwatch_Re.srcs/sources_1/new/stopwatch_re.v,1747393328,verilog,,C:/Working/FPGA_AI_25_2/250516_stopwatch_Re/250516_stopwatch_Re.srcs/sim_1/new/tb_stopwatch_re.v,,stopwatch_re,,,,,,,,
