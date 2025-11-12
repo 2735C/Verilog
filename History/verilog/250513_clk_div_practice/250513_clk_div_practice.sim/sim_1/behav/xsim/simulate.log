@@ -1,0 +1,3 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+$stop called at time : 20 ns : File "C:/Working/FPGA_AI_25_2/250513_clk_div_practice/250513_clk_div_practice.srcs/sim_1/new/tb_clk_div_test.v" Line 24

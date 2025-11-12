@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu May  8 14:46:16 2025
+# Process ID: 12552
+# Current directory: C:/Working/FPGA_AI_25_2/250508_gates/250508_gates.runs/synth_1
+# Command line: vivado.exe -log gates.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source gates.tcl
+# Log file: C:/Working/FPGA_AI_25_2/250508_gates/250508_gates.runs/synth_1/gates.vds
+# Journal file: C:/Working/FPGA_AI_25_2/250508_gates/250508_gates.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source gates.tcl -notrace

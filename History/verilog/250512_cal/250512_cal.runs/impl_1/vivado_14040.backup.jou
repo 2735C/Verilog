@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon May 12 18:13:11 2025
+# Process ID: 14040
+# Current directory: C:/Working/FPGA_AI_25_2/250512_cal/250512_cal.runs/impl_1
+# Command line: vivado.exe -log calculator.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source calculator.tcl -notrace
+# Log file: C:/Working/FPGA_AI_25_2/250512_cal/250512_cal.runs/impl_1/calculator.vdi
+# Journal file: C:/Working/FPGA_AI_25_2/250512_cal/250512_cal.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source calculator.tcl -notrace

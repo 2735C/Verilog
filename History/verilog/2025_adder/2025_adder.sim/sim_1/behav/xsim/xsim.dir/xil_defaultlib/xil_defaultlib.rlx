@@ -1,0 +1,7 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Working/FPGA_AI_25_2/2025_adder/2025_adder.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+C:/Working/FPGA_AI_25_2/2025_adder/2025_adder.srcs/sim_1/new/tb_FA_4.v,1746696776,verilog,,,,tb_FA_4,,,,,,,,
+C:/Working/FPGA_AI_25_2/2025_adder/2025_adder.srcs/sources_1/new/adder.v,1746691110,verilog,,C:/Working/FPGA_AI_25_2/2025_adder/2025_adder.srcs/sim_1/new/tb_FA_4.v,,FA_4;full_adder;half_adder,,,,,,,,
