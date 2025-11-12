@@ -1,0 +1,7 @@
+Running: xsim.dir/Mealy_FSM2_behav/xsimk.exe -simmode gui -wdb Mealy_FSM2_behav.wdb -simrunnum 0 -socket 52504
+Design successfully loaded
+Design Loading Memory Usage: 8468 KB (Peak: 8468 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 9108 KB (Peak: 9108 KB)
+Simulation CPU Usage: 46 ms

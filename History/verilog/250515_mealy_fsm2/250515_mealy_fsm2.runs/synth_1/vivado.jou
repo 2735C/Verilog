@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May 14 19:59:08 2025
+# Process ID: 27336
+# Current directory: C:/Working/FPGA_AI_25_2/250514_fsm2/250514_fsm2.runs/synth_1
+# Command line: vivado.exe -log fsm2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fsm2.tcl
+# Log file: C:/Working/FPGA_AI_25_2/250514_fsm2/250514_fsm2.runs/synth_1/fsm2.vds
+# Journal file: C:/Working/FPGA_AI_25_2/250514_fsm2/250514_fsm2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source fsm2.tcl -notrace

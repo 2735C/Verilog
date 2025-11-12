@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May 16 09:08:49 2025
+# Process ID: 16960
+# Current directory: C:/Working/FPGA_AI_25_2/250516_mealy fsm re/250516_mealy fsm re.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Working/FPGA_AI_25_2/250516_mealy fsm re/250516_mealy fsm re.sim/sim_1/behav/xsim/xsim.dir/TB_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Working/FPGA_AI_25_2/250516_mealy fsm re/250516_mealy fsm re.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Working/FPGA_AI_25_2/250516_mealy fsm re/250516_mealy fsm re.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Working/FPGA_AI_25_2/250516_mealy -notrace
+couldn't read file "C:/Working/FPGA_AI_25_2/250516_mealy": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Fri May 16 09:08:49 2025...
