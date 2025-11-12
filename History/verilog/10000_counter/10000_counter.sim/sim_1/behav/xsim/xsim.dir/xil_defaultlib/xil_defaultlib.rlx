@@ -1,0 +1,8 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Working/FPGA_AI_25_2/10000_counter/10000_counter.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+C:/Working/FPGA_AI_25_2/10000_counter/10000_counter.srcs/sim_1/new/tb_10000_counter.v,1747038200,verilog,,,,tb_10000_counter,,,,,,,,
+C:/Working/FPGA_AI_25_2/10000_counter/10000_counter.srcs/sources_1/imports/new/fnd_controller.v,1747036660,verilog,,C:/Working/FPGA_AI_25_2/10000_counter/10000_counter.srcs/sources_1/new/TOP_10000_counter.v,,bcd;clk_div;counter_4;decoder_2x4;digit_splitter;fnd_controllr;mux_4x1,,,,,,,,
+C:/Working/FPGA_AI_25_2/10000_counter/10000_counter.srcs/sources_1/new/TOP_10000_counter.v,1747038078,verilog,,C:/Working/FPGA_AI_25_2/10000_counter/10000_counter.srcs/sim_1/new/tb_10000_counter.v,,TOP_10000_counter;counter_1000,,,,,,,,

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May 13 15:44:10 2025
+# Process ID: 2328
+# Current directory: C:/Working/FPGA_AI_25_2/10000_counter/10000_counter.runs/synth_1
+# Command line: vivado.exe -log TOP_10000_counter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP_10000_counter.tcl
+# Log file: C:/Working/FPGA_AI_25_2/10000_counter/10000_counter.runs/synth_1/TOP_10000_counter.vds
+# Journal file: C:/Working/FPGA_AI_25_2/10000_counter/10000_counter.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TOP_10000_counter.tcl -notrace

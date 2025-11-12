@@ -1,0 +1,49 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Tue May 13 15:45:41 2025
+| Host         : DESKTOP-7CFQ9ND running 64-bit major release  (build 9200)
+| Command      : report_drc -file TOP_10000_counter_drc_opted.rpt -pb TOP_10000_counter_drc_opted.pb -rpx TOP_10000_counter_drc_opted.rpx
+| Design       : TOP_10000_counter
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 1
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT U_CLK_DIV_100/r_count[26]_i_3 is driving clock pin of 28 cells. This could lead to large hold time violations. Involved cells are:
+U_CLK_DIV_100/r_clk_reg, U_CLK_DIV_100/r_count_reg[0],
+U_CLK_DIV_100/r_count_reg[10], U_CLK_DIV_100/r_count_reg[11],
+U_CLK_DIV_100/r_count_reg[12], U_CLK_DIV_100/r_count_reg[13],
+U_CLK_DIV_100/r_count_reg[14], U_CLK_DIV_100/r_count_reg[15],
+U_CLK_DIV_100/r_count_reg[16], U_CLK_DIV_100/r_count_reg[17],
+U_CLK_DIV_100/r_count_reg[18], U_CLK_DIV_100/r_count_reg[19],
+U_CLK_DIV_100/r_count_reg[1], U_CLK_DIV_100/r_count_reg[20],
+U_CLK_DIV_100/r_count_reg[21] (the first 15 of 28 listed)
+Related violations: <none>
+
+
